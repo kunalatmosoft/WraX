@@ -133,6 +133,29 @@ export default function PremiumDarkHero() {
       <div className="relative min-h-screen bg-black bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://cdn.pixabay.com/photo/2014/12/27/15/40/milky-way-581354_960_720.jpg)' }}>
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 container mx-auto px-6 py-20 text-center">
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(100)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute h-0.5 w-0.5 bg-white rounded-full"
+              animate={{
+                x: [0, mousePosition.x / 20, 0],
+                y: [0, mousePosition.y / 20, 0],
+                scale: [1, 1.5, 1],
+                opacity: [0.1, 0.3, 0.1],
+              }}
+              transition={{
+                duration: Math.random() * 3 + 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
+              }}
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+            />
+          ))}
+        </div>
           <h2 className="text-4xl text-white font-bold mb-6">Explore the Infinite Possibilities</h2>
           <p className="text-lg text-gray-300 mb-8">
             Journey through the cosmos and unlock the secrets of the universe with our platform. Every feature is designed to take you on an unforgettable adventure.

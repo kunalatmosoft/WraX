@@ -46,7 +46,7 @@ export async function POST(request) {
               <div style="text-align: center; margin: 30px 0;">
                 <a href="https://wrax.netlify.app" style="display: inline-block; padding: 12px 30px; background-color: #1abc9c; color: white; text-decoration: none; font-size: 18px; border-radius: 25px;">Explore Atmosoft</a>
               </div>
-              <p style="font-size: 14px; color: #bdc3c7; text-align: center;">If you didn’t subscribe to this list, you can <a href="https://atmosoft.com/unsubscribe" style="color: #3498db;">unsubscribe here</a>.</p>
+              <p style="font-size: 14px; color: #bdc3c7; text-align: center;">If you didn’t subscribe to this list, you can <a href="https://https://wrax.netlify.app/Unsubscribe" style="color: #3498db;">unsubscribe here</a>.</p>
             </div>
             <div style="background-color: #0e1a33; padding: 15px; text-align: center;">
               <p style="font-size: 12px; color: #95a5a6; margin: 0;">© 2024 Atmosoft, All rights reserved.</p>

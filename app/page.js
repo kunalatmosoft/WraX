@@ -5,6 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { ArrowRight, Star, Sparkles } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import SubscribeForm from '@/components/SubscribeForm';
 export default function PremiumDarkHero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const controls = useAnimation();
@@ -169,6 +170,7 @@ export default function PremiumDarkHero() {
             <button className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
               Start Your Journey
             </button>
+            <SubscribeForm/>
           </motion.div>
         </div>
       </div>

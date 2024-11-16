@@ -1,0 +1,16 @@
+{
+    "name": "Next.js Docker",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [3000],
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-vscode-remote.remote-containers",
+      "dbaeumer.vscode-eslint"
+    ],
+    "postCreateCommand": "npm install"
+  }
+  
